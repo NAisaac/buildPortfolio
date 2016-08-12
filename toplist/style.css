@@ -1,3 +1,61 @@
-.description {
-	color:blue;
+/* 
+CSS selectors: http://www.w3schools.com/cssref/css_selectors.asp
+.image is selecting all class=image
+.description is selecting all class=description
+* is selecting ALL elements
+*/
+
+*{
+	/*browser supoort */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+.title{
+	background: #5fe6ff;
+}
+
+.app{
+	/*browser supoort */
+	display: -webkit-flex;
+	flex-direction: row
+}
+
+.image{
+	display: flex;
+	order: 1;
+	max-width: 500px;
+	max-height: 500px;
+	object-fit: contain;
+}
+
+img {
+	max-width: 400px;
+	max-height: 400px;
+	object-fit: contain;
+}
+
+.description {
+	display: flex;
+	order: 3;
+	max-width: 500px;
+	color: blue;
+	overflow-wrap: break-word; 
+	background: gold
+}
+
+.description2 {
+	display: flex;
+	order: 2;
+	max-width: 500px;
+	color: blue;
+	overflow-wrap: break-word; 
+	background: gold
+}
+*{
+	outline: 1px solid black !important;
+}
+
+
