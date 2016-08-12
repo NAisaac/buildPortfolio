@@ -6,6 +6,7 @@ CSS selectors: http://www.w3schools.com/cssref/css_selectors.asp
 */
 
 *{
+	/*outline: 1px solid black !important;*/
 	/*browser supoort */
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -15,47 +16,38 @@ CSS selectors: http://www.w3schools.com/cssref/css_selectors.asp
 
 .title{
 	background: #5fe6ff;
+	color: white;
+	text-align: center;
 }
 
-.app{
-	/*browser supoort */
-	display: -webkit-flex;
-	flex-direction: row
-}
-
-.image{
+.flexcontainer{
 	display: flex;
-	order: 1;
-	max-width: 500px;
-	max-height: 500px;
-	object-fit: contain;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-img {
-	max-width: 400px;
-	max-height: 400px;
-	object-fit: contain;
+img{
+	width: 33%;
+	height: 400px;
+	object-fit: fill;
 }
 
 .description {
-	display: flex;
-	order: 3;
-	max-width: 500px;
-	color: blue;
+	width: 33%;
+	height: 100px;
+	color: black;
 	overflow-wrap: break-word; 
-	background: gold
+	text-align: center;
 }
 
-.description2 {
-	display: flex;
-	order: 2;
-	max-width: 500px;
-	color: blue;
-	overflow-wrap: break-word; 
-	background: gold
-}
-*{
-	outline: 1px solid black !important;
+.one{
+	background: green
 }
 
+.two{
+	background: yellow
+}
 
+.three{
+	background: red;
+}
