@@ -1,0 +1,4 @@
+/*max width of these elements are of the container in order to prevent overflow*/
+img, embed, object, video {
+	max-width: 100%;
+}
