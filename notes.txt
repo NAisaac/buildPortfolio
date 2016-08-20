@@ -1,0 +1,59 @@
+------------------------------------------------------------------------------------
+Viewport
+------------------------------------------------------------------------------------
+*** Setting Viewport ***
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Setting the viewport so that device's screen width is matched and orientation working-->
+	<!--ALWAYS ALWAYS ALWAYS set the viewport (http://www.w3schools.com/css/css_rwd_viewport.asp)-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------
+Media Query
+------------------------------------------------------------------------------------
+*** 2 different ways of using Media Query ***
+
+1. Linking stylesheet in html: for many small http requests
+e.g. 
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)" href="css/main1.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="css/main2.css">
+2. Embed in CSS with @media : for big http requests
+e.g. 
+body {
+  background-color:red;
+}
+
+@media screen and (min-width: 401px){
+  body{background-color:green;}
+}
+
+@media screen and (min-width: 600px){
+  body{background-color:blue}
+}
+
+*** Most popular ways of using Media Query ***
+
+min-width, max-width
+
+
+------------------------------------------------------------------------------------
+Flex Box
+------------------------------------------------------------------------------------
+http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+display: flex;
+flex-wrap: wrap;
+order: 1;
+order: 2;
+order: 3;
