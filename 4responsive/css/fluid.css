@@ -10,31 +10,36 @@
 
 .black{
 	background-color: black;
+	order: 0;
 }
 
 .blue{
 	background-color: #03a9f4;
+	order: 4;
 }
 
 .emerald{
 	background-color: #02ecfa;
+	order: 3;
 }
 
 .pink{
 	background-color: #fac6e5;
+	order: 1;
 }
 
 .orange{
 	background-color: #feb52c;
+	order: 2;
 }
 
 @media screen and (min-width: 450px){
-	.blue, .emerald{width: 50%;}
+	.pink, .orange{width: 50%;}
 }
 
 @media screen and (min-width: 550px){
-	.black, .blue{width: 50%;}
-	.emerald, .pink, .orange{width: 33.333%;}
+	.black, .pink{width: 50%;}
+	.emerald, .blue, .orange{width: 33.333%;}
 }
 
 @media screen and (min-width: 750px){
