@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../../default-styles.css">
+    <link rel="stylesheet" type="text/css" href="css/default-styles.css">
     <style type="text/css">
       
       html, body {
@@ -29,7 +29,7 @@
        * Off-canvas layout styles.
        */
 
-      /* By default, nav class is hidden, as in outside of the viewport */
+      /* Since we're mobile-first, by default, the drawer is hidden. */
       nav {
         width: 300px;
         height: 100%;
@@ -40,7 +40,6 @@
         /* Optionally, we animate the drawer. */
         transition: transform 0.3s ease;
       }
-      /* This nav.open class is applied on click */
       nav.open {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
@@ -77,7 +76,7 @@
           content: 'The drawer stays open if width > 600px';
         }
         main p, nav p {
-          text-decoration: line-through;
+          display: none;
         }
       }
 
@@ -100,7 +99,7 @@
 
     <script>
       /*
-       * Open the drawer when the menu hamburger icon is clicked.
+       * Open the drawer when the menu ison is clicked.
        */
       var menu = document.querySelector('#menu');
       var main = document.querySelector('main');

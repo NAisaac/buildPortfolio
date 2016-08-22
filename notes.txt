@@ -27,6 +27,7 @@ e.g.
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px)" href="css/main1.css">
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="css/main2.css">
+
 2. Embed in CSS with @media : for big http requests
 e.g. 
 body {
@@ -57,3 +58,67 @@ flex-wrap: wrap;
 order: 1;
 order: 2;
 order: 3;
+
+------------------------------------------------------------------------------------
+Transforms & Transitions (e.g. Hamburger menu icon)
+------------------------------------------------------------------------------------
+https://robots.thoughtbot.com/transitions-and-transforms
+https://css-tricks.com/almanac/properties/t/transition/
+
+*** With Transition you can control the change, making it smooth and gradual ***
+e.g.
+selector {
+	transition-property: background-color;
+	transition-duration: 3s;
+	background-color: white;
+	}
+e.g. shorthand version
+selector {
+	transition: background-color 3s;
+	background-color: white;
+	}
+
+*** With Transform property you can rotate, move, skew, and scale elements. Without Transition, Transform would change abruptly from one state to another  *** 
+e.g.
+selectro {
+	transition: transform 3s;
+	transform: translate(300px, 20px);
+}
+
+------------------------------------------------------------------------------------
+Tables
+------------------------------------------------------------------------------------
+https://css-tricks.com/examples/ResponsiveTables/responsive.php
+https://css-tricks.com/responsive-data-table-roundup/
+http://codepen.io/JohnMav/pen/Mazrwm
+http://codepen.io/JohnMav/pen/BoGJNy
+
+------------------------------------------------------------------------------------
+Ellipsis: truncate string
+------------------------------------------------------------------------------------
+https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/
+http://joelsaupe.com/programming/multiple-line-ellipsis-css/
+
+------------------------------------------------------------------------------------
+Responsive Images
+------------------------------------------------------------------------------------
+*** Relative sizing ***
+e.g.
+max-width: 100%
+
+*** Viewport sizing (vw, vh, vmax, vmin) ***
+Relative sizing to viewport size
+100% of viewport width or height
+e.g. 
+width: 100vw;
+height: 100vh;
+
+width: 100vmax or 100vmin;
+height: 100vmax;
+
+*** calc() method ***
+Multiple images with margins require some calculation. Symbols '+' and '-' must have
+space around it. '*' and '/' do not need space.
+e.g.
+width: calc((100% - 20px)/2);
+

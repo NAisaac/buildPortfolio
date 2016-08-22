@@ -27,11 +27,13 @@
         min-height: 150px;
       }
 
+      p {
+        color: #2A457A;
+        font-size: 2.5em;
+      }
       .dark_blue {
         background-color: #2A457A;
-        color: #2A457A;
-        text-align: center;
-        font-size: 2.5em;
+
       }
 
       .light_blue {
@@ -99,8 +101,12 @@
         .green, .red{order: 0;}
         .lime, .seafoam{width: 50%;}
         .dark_blue{
-          transition:background-color 3s;
+          transition: background-color 3s;
           background-color: white;
+        }
+        p{
+          transition: transform 3s;
+          transform: translate(300px, 20px);
         }
       }
 
@@ -108,7 +114,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="box dark_blue">Hello World!</div>
+      <div class="box dark_blue"><p>Hello World!</p></div>
       <div class="box light_blue"></div>
       <div class="box green"></div>
     </div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Tables</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		/*
+		* CSS style
+		*/
+		@media screen and (max-width: 500px){
+			.gametime{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+<table class="score_table">
+<thead>
+	<tr>
+		<th>date</th>
+		<th class="gametime">game time</th>
+		<th>team</th>
+		<th colspan="2">score</th>
+		<th>team</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Friday</td>
+		<td class="gametime">7:30pm</td>
+		<td>Nationals</td>
+		<td>7</td>
+		<td class="winner">10</td>
+		<td class="winner">Giants</td>
+	</tr>
+</tbody>
+</table>
+</body>
+</html>
