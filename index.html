@@ -6,74 +6,191 @@
     <meta charset="utf-8">
     <!--use the best Internet Explorer engine-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--initial mobile display specification-->
+    <!--set viewport: initial mobile display specification-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
     <!--use Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- use my styles to overwrite Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--use Google api font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!--jquery link to Google's hosted library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!--Bootstrap file link-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
   </head>
   <body>
     <div class="container">
-      <div class="row title-logo">
-        <div class="col-md-6"><img class="img-responsive" src="dash.png"></div>
+      <div class="row title">
+        <div class="col-md-6">
+          <img class="img-responsive title-logo" src="img/u_logo.png">
+        </div>
         <div class="col-md-6 text-uppercase text-right">
           <h1>Isaac Yi</h1>
-          <h3>Front-end Ninja</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" src="http://unsplash.it/1140/350">
+          <h4 class="hashtag">#Aspiring#Fullstack#Ninja</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2>Favorites</h2>
+          <hr></hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="img/dish_pano.jpg" alt="Stanford Dish panorama">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-color">Featured Work</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img class="img-responsive" src="beachapt.jpg" alt="beach apt image">
-          <h3>Beachfront Condo</h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </div>
-        <div class="col-md-4 blah">
-          <img class="img-responsive" src="volcanosurf.jpg" alt="volcano surf image" data-toggle="modal" data-target="#project1">
-          <h3>Surfin' Chicks</h3>
-          <p><a href="http://github.com">Link to project</a></p>
+          <img class="img-responsive featureImage" src="img/beachapt.jpg" alt="beach apt image" data-toggle="modal" data-target="#project1">
+          <h3>Movie Trailer</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
         </div>
         <div class="col-md-4">
-          <img class="img-responsive" src="surfer.jpg" alt="wave surf image">
-          <h3>Roaring Waves</h3>
-          <p><a href="http://github.com">Link to project</a></p>
+          <img class="img-responsive featureImage" src="img/portfolio.jpg" alt="portfolio image" data-toggle="modal" data-target="#project2">
+          <h3>Project Portfolio</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive featureImage" src="img/blog.jpg" alt="blog image" data-toggle="modal" data-target="#project3">
+          <h3>Multi User Blog</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-responsive featureImage" src="img/database.jpg" alt="database image" data-toggle="modal" data-target="#project4">
+          <h3>Tournament Database</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive featureImage" src="img/fullstack.jpg" alt="fullstack image" data-toggle="modal" data-target="#project5">
+          <h3>Full Stack App</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="img-responsive featureImage" src="img/map.jpg" alt="map image" data-toggle="modal" data-target="#project6">
+          <h3>Neighborhood Map</h3>
+          <p class="github"><a href="http://github.com">Github Link</a></p>
         </div>
       </div>
     </div>
-        <!-- Modal -->
+    <!-- Modals -->
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="myModalLabel">Movie Trailer</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="volcanosurf.jpg">
-                    This is my first modal!!! Yay.
+                    <img class="img-responsive" src="img/beachapt.jpg" alt="beach apt image">
+                    <h5>(Python)</h5>
+                    <p>Server-side code to store a list of my favorite movies, with poster images and a movie trailer URL + serve this data as a web page allowing visitors to review the movies and watch the trailers.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Project Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/portfolio.jpg" alt="portfolio image">
+                    <h5>(Responsive, HTML, CSS, Bootstrap)</h5>
+                    <p>Portfolio page that showcases all of my full stack projects. What you are seeing right now!</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Multi User Blog</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/blog.jpg" alt="blog image">
+                    <h5>(DB, Google App Engine, Security)</h5>
+                    <p>Multi user blog (like Medium) where users can sign in and post blog posts as well as 'Like' and 'Comment' on other posts made on the blog. Equipped with authentication system and hosted by Google App Engineduring registration.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Tournament Database</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/database.jpg" alt="databse image">
+                    <h5>(MySQL, PostgreSQL, DB design, DB API)</h5>
+                    <p>Database schema to store game matches between players</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Full Stack App</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/fullstack.jpg" alt="full stack image">
+                    <h5>(JavaScript, Flask, ORM, OAuth)</h5>
+                    <p>Application that provides a list of items within a variety of categories, as well as, user registration and authentication system.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/map.jpg" alt="map image">
+                    <h5>(AJAX, API, JavaScript Design Patterns)</h5>
+                    <p>Single-page application featuring a map of my neighborhood with functionality such as location marking, location searching, list viewing, additional information using third-party APIs</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
   </body>
+
 </html>

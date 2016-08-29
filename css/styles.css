@@ -1,9 +1,59 @@
-.title-logo {
-	margin-top: 30px
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #2d3c49;
 }
 
-.blah {
-	object-fit: contain;
-	width: 555;
-	height: 300;
+h1 {
+	font-size: 50px;
+	font-weight: 100;
+	letter-spacing: 1px;
 }
+
+h3 {
+	text-align: center;
+}
+
+h5 {
+	color: red;
+}
+
+hr {
+	background-color: #7d97ad;
+	height: 2px;
+}
+
+.title {
+	margin-top: 30px;
+}
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.hashtag {
+	color: #217bf3;
+}
+
+.text-color {
+	color: #7d97ad;
+	margin-left: 7px;
+}
+
+.github {
+	text-align: center;
+}
+
+.btn-default {
+	color: white;
+	background-color: #99e6ff;
+}
+
+.featureImage {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+
+
